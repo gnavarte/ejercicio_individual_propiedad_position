@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Menú de navegación */
+nav {
+    position: fixed; /* El menú queda fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* Aseguramos que esté encima del contenido principal */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Posiciona los elementos de la lista en una fila horizontal */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #555; /* Color al pasar el cursor */
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+main {
+    margin-top: 60px; /* Espacio para que el contenido no quede detrás del menú fijo */
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 50px;
+}
